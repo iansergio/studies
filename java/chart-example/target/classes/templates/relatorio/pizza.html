@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico de Pizza</title>
+</head>
+<body>
+<h1>Gráfico de Pizza</h1>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<br>
+<div>
+    <canvas id="chart" >
+    </canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script th:inline="javascript">
+    let entidade = [[${relatorio}]];
+</script>
+<script>
+    const ctx = document.getElementById('chart');
+    console.log(entidade)
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: entidade.labels,
+            datasets: [{
+                label: entidade.legenda,
+                data: entidade.valores,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: entidade.titulo,
+                    font: {
+                        size: 16
+                    }
+                },
+            },
+            label: { display: false},
+        }
+    });
+</script>
+</body>
+</html>
