@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Memória Virtual por Paginação</title>
+    <style>
+        .memory-container,
+        .disk-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .page,
+        .disk-page {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .page.in-memory {
+            background-color: lightgreen;
+        }
+
+        .disk-page {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Simulação de Memória Virtual por Paginação</h2>
+
+    <div class="memory-container" id="memoryContainer">
+        <div class="page">Memória 1</div>
+        <div class="page">Memória 2</div>
+        <div class="page">Memória 3</div>
+        <div class="page">Memória 4</div>
+    </div>
+    <p><b>Memória Física (limitada a 4 páginas)</b></p>
+
+    <div class="disk-container" id="diskContainer">
+        <div class="disk-page">Página 1</div>
+        <div class="disk-page">Página 2</div>
+        <div class="disk-page">Página 3</div>
+        <div class="disk-page">Página 4</div>
+        <div class="disk-page">Página 5</div>
+        <div class="disk-page">Página 6</div>
+        <div class="disk-page">Página 7</div>
+    </div>
+    <p><b>Memória Secundária (disco)</b></p>
+
+    <button onclick="loadPage(1)">Carregar Página 1</button>
+    <button onclick="loadPage(2)">Carregar Página 2</button>
+    <button onclick="loadPage(3)">Carregar Página 3</button>
+    <button onclick="loadPage(4)">Carregar Página 4</button>
+    <button onclick="loadPage(5)">Carregar Página 5</button>
+    <button onclick="loadPage(6)">Carregar Página 6</button>
+    <button onclick="loadPage(7)">Carregar Página 7</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

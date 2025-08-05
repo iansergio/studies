@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="task">
+            <h1>to do list</h1>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="checkmark">
+            <a href=""><span class="task-delete">Apagar tarefas concluídas</span></a>
+        </div>
+        <div class="task task-1">
+            <input type="checkbox" id="task_1" class="checkmark">
+            <span>Arrumar as casa</span>
+        </div>
+        <div class="task task-2">
+            <input type="checkbox" id="task_2" class="checkmark">
+            <span>Estudar</span>
+        </div>
+
+        <div class="task task-3">
+            <input type="checkbox" id="task_3" class="checkmark">
+            <span>Lavar a louça</span>
+        </div>
+
+        <form action="">
+            <input type="text" id="texto" name="texto" placeholder="Digite uma nova tarefa..." />
+            <input type="submit" value="Add" id="enviar">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

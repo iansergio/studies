@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navegacao">
+        <div class="nav-logo">
+            <img src="images/Logo.png" alt="Logo">
+        </div>
+        <ul class="nav-lista">
+            <li><a href="#" class="ativo">PÁGINA INICIAL</a></li>
+            <li><a href="#">CLIENTE</a></li>
+            <li><a href="#">ANIMAL</a></li>
+            <li><a th:href="@{/logout}" class="sair">SAIR</a></li>
+        </ul>
+    </nav>
+
+    <div class="nova-consulta">
+        <form action="endereco do cadastro de consulta">
+            <input type="submit" value="Nova Consulta" />
+        </form>
+    </div>
+    
+    <div class="links">
+        <a href="#" class="image-container">
+            <img src="images/v45_201.png" alt="Exames">
+            <div class="overlay">
+                <h1>EXAMES</h1>
+            </div>
+        </a>
+        <a href="#" class="image-container">
+            <img src="images/v45_203.png" alt="Diagnósticos">
+            <div class="overlay">
+                <h1>DIAGNÓSTICOS</h1>
+            </div>
+        </a>
+        <a href="#" class="image-container">
+            <img src="images/v45_205.png" alt="Retorno">
+            <div class="overlay">
+                <h1>RETORNO</h1>
+            </div>
+        </a>
+        <a href="#" class="image-container">
+            <img src="images/v45_208.png" alt="Agendamentos">
+            <div class="overlay">
+                <h1>AGENDAMENTOS</h1>
+            </div>
+        </a>
+    </div>
+        
+    <footer class="footer">
+        <p>	&copy; 2024 Hospital VET. Todos os direitos reservados </p>
+    </footer>
+</body>
+
+</html>

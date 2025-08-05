@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/emotional-rescue-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.cdnfonts.com/css/simplifica');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #161616; */
+    background-color: #F8F8FF;
+    /* font-family: "Comforter", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal; */
+}
+
+.container {
+    background-color: #F8F8FF;
+    width: 40%;
+    height: 96%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.left {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    /* background-color: chartreuse; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Emotional Rescue Personal Use', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #4B0082;
+}
+
+h3 {
+    font-family: 'Simplifica', sans-serif;
+    font-size: 16px;
+    letter-spacing: 8px;
+    background-color: #4B0082;
+    color: #F8F8FF;
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    margin: 15px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+ul {
+    list-style-position: outside;
+
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    width: 88.9%;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+.destaque {
+    display: flex;
+    background-color: #4B0082;
+    color: #F8F8FF;
+}
+
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+    } 
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {}

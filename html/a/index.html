@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Simples</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+        }
+        .topbar {
+            background-color: #f26522;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+        }
+        .sidebar {
+            width: 220px;
+            background-color: #d9d9d9;
+            height: 100vh;
+            padding: 10px;
+            position: fixed;
+        }
+        .content {
+            margin-left: 240px;
+            padding: 20px;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 10px 0;
+        }
+        .card {
+            background-color: #d9d9d9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+        }
+        .main-chart, .recent-activities {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .chart-placeholder {
+            width: 100%;
+            height: 300px;
+            background: repeating-linear-gradient(45deg, #ccc, #ccc 10px, #eee 10px, #eee 20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div>☰</div>
+        <div>👤</div>
+    </div>
+    <div class="sidebar">
+        <div class="user-info">
+            <img src="https://via.placeholder.com/40" alt="User">
+            <div>
+                <div>Nome do Cliente</div>
+                <small>Entre ou cadastre-se</small>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>Relatório</li>
+            <li>Dashboard</li>
+            <li>Vendas</li>
+            <li>Cliente</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="card">Saldo:</div>
+        <div class="card">Renda:</div>
+        <div class="main-chart">
+            <div class="chart-placeholder">Gráfico de Barras Aqui</div>
+        </div>
+        <div class="recent-activities">
+            Atividades Recentes
+        </div>
+    </div>
+</body>
+</html>

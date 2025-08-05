@@ -1,0 +1,142 @@
+/* CSS Global */
+:root {
+    --primary-color: #8A05BE;
+    --secondary-color: #F5F5F5;
+    --accent-color: #D100B4;
+    --background-color: #FFFFFF;
+    --text-color: #333;
+    --font-size-default: 16px;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: var(--font-size-default);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header, .footer {
+    background-color: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button, a.button {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, a.button:hover {
+    background-color: var(--accent-color);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (min-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header, .footer {
+        font-size: 1.4rem;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .header, .footer {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }
+
+    button, a.button {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .header, .footer {
+        font-size: 1.8rem;
+    }
+
+    button, a.button {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+}
